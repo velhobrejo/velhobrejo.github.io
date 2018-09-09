@@ -1,0 +1,27 @@
+{
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null",
+    "grupos": {
+      "$key": {
+        "users": {
+          ".indexOn": ".value"
+        }
+      }
+    },
+    "chats": {
+      "$key": {
+        "chats": {
+        	".indexOn": "timestamp"
+      	}
+      }
+    },
+    "plantoes": {
+      "$key": {
+        "grupos": {
+            ".indexOn": ".value"
+        }
+      }
+    }
+  }
+}

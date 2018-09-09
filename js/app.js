@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    var grupo = 'novaiguacu';
+    var grupo = 'belfordroxo';
    
 
     //****************** Auth ******************
